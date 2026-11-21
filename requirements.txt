@@ -1,0 +1,8 @@
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+opencv-python>=4.8
+pillow>=10
+# only for the DINOv3 stages (tests/*extract_dino.py):
+# torch
+# timm>=1.0.30

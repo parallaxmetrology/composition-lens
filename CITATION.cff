@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Where the line sits: reading horizon and vertical-line position in photographs, checked against human marks"
+type: article
+authors:
+  - family-names: Parrish
+    given-names: Russell
+    orcid: https://orcid.org/0009-0008-9781-7995
+version: "note and lab book, 20 November 2026"
+date-released: 2026-11-20
+license: CC-BY-4.0
+url: https://parallaxmetrology.com/composition-lens/
+repository-code: https://github.com/parallaxmetrology/composition-lens
+keywords: [image composition, photographic composition, rule of thirds, horizon, PICD, CADB, interpretable measurement, benchmark]
+abstract: >
+  Plain, named readings of the strongest horizontal and vertical lines in a photograph, with no model trained on photographs,
+  agree with where annotators drew lines on CADB (9,497 photographs; median error 0.040 of the image height against 0.226
+  for shuffled marks) and separate PICD categories that whole-image methods could not. Subject placement is not established.

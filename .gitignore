@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+data/cadb/
+data/picd/data/images/
+data/picd/data/lockboxb/
+results/*.npz
+results/*.npy
+results/*_raw.json
+results/m3_features_*.json
+results/m3c_features_*.json
+results/m4_features_*.json
+results/m4_chunks/
+results/*_spec.sha256

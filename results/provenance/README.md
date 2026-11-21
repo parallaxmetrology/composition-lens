@@ -1,0 +1,3 @@
+# Provenance of the frozen specifications
+
+`m3_spec.sha256`, `m3c_spec.sha256` and `m4_spec.sha256` are the hashes written in the working copy of the study before the PICD confirmation run (DevB), the PICD fresh run (LockboxB) and the CADB run, with the manifests of the files they cover. The files in this repository differ from that working copy only in file paths (absolute paths replaced by the `PICD_ROOT` environment variable and relative `plans/` paths), so these hashes do not match this copy. To rerun a guarded stage here, freeze this copy's specification first with `python tools/freeze.py m3` (then `m3c`, `m4`); the extraction scripts then refuse to run a second time or after any change. The stage plans as frozen are in `plans/`.

@@ -1,0 +1,134 @@
+{
+ "note": "Draft mapping by NAME, made 20 Nov 2026; not validated. A PICD category can map to several templates (it is a label, not a rule).",
+ "picd": {
+  "P-RoT": [
+   "thirds_pts"
+  ],
+  "S-RoT": [
+   "thirds_pts"
+  ],
+  "P-Cent": [
+   "centre_pt"
+  ],
+  "S-Cent": [
+   "centre_pt"
+  ],
+  "P-Dia": [
+   "diag_baroque",
+   "diag_sinister"
+  ],
+  "LS-Dia": [
+   "diag_baroque",
+   "diag_sinister"
+  ],
+  "P-Hori": [],
+  "LS-Hori2": [
+   "centre_h"
+  ],
+  "LS-Hori3": [
+   "thirds_h"
+  ],
+  "S-Hori": [],
+  "P-Ver": [],
+  "L-Ver2": [
+   "centre_v"
+  ],
+  "L-Ver3": [
+   "thirds_v"
+  ],
+  "L-VerMul": [],
+  "P-Tri": [],
+  "LS-Tri": [],
+  "LS-C-Cur": [],
+  "LS-O-Cur": [],
+  "LS-S-Cur": [],
+  "LS-Dif": [],
+  "S-Per": [
+   "persp_1pt",
+   "persp_2pt",
+   "persp_3pt"
+  ],
+  "PL-Den": [],
+  "PL-Pat": [],
+  "P-Scat": []
+ },
+ "cadb": {
+  "center": [
+   "centre_h",
+   "centre_v",
+   "centre_pt"
+  ],
+  "rule of thirds": [
+   "thirds_h",
+   "thirds_v",
+   "thirds_pts"
+  ],
+  "golden ratio": [
+   "phi_h",
+   "phi_v",
+   "phi_pts"
+  ],
+  "triangle": [
+   "golden_triangle"
+  ],
+  "horizontal": [
+   "thirds_h",
+   "centre_h"
+  ],
+  "vertical": [
+   "thirds_v",
+   "centre_v"
+  ],
+  "diagonal": [
+   "diag_baroque",
+   "diag_sinister"
+  ],
+  "symmetric": [
+   "centre_v",
+   "symmetry"
+  ],
+  "curved": [
+   "golden_spiral"
+  ],
+  "radial": [
+   "radial"
+  ],
+  "vanishing point": [
+   "persp_1pt",
+   "persp_2pt",
+   "persp_3pt"
+  ],
+  "pattern": [],
+  "fill the frame": []
+ },
+ "templates_without_picd": [
+  "phi_h",
+  "phi_v",
+  "phi_pts",
+  "fifths_h",
+  "fifths_v",
+  "golden_triangle",
+  "rabatment",
+  "golden_spiral",
+  "armature14",
+  "rootrect",
+  "radial",
+  "symmetry"
+ ],
+ "picd_without_v0_template": [
+  "P-Hori",
+  "S-Hori",
+  "P-Ver",
+  "L-VerMul",
+  "P-Tri",
+  "LS-Tri",
+  "LS-C-Cur",
+  "LS-O-Cur",
+  "LS-S-Cur",
+  "LS-Dif",
+  "S-Per",
+  "PL-Den",
+  "PL-Pat",
+  "P-Scat"
+ ]
+}

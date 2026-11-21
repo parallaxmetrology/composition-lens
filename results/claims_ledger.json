@@ -1,0 +1,146 @@
+[
+ {
+  "id": "C9",
+  "status": "replicated on a second dataset",
+  "claim": "The dominant horizontal and vertical line readings agree with where CADB annotators marked the line.",
+  "evidence": "Images with one marked segment, all 9,497 images: horizontal n = 2117, median |y* - mark| 0.040 of the height against 0.226 for permuted marks, 53% within 0.05; vertical n = 377, median 0.069 against 0.287, 47% within 0.05. Line-coverage scores rank the CADB horizontal and vertical classes above the rest: AUC 0.77 and 0.63 on the test split.",
+  "where": "Figures 15, 16",
+  "note": "Zero-shot: the lens spec was frozen before CADB was read. Different annotators and class definitions from PICD."
+ },
+ {
+  "id": "C6",
+  "status": "replicated: confirmation and fresh",
+  "claim": "A line-position reading separates two of the five PICD category pairs that no earlier whole-image method separated: horizon in the middle vs a third, and a vertical line in the middle vs a third.",
+  "evidence": "AUC on DevA / DevB / LockboxB: LS-Hori3 vs LS-Hori2 0.85 / 0.86 / 0.78; L-Ver3 vs L-Ver2 0.77 / 0.82 / 0.79. Fitted DINOv3 probe on the pooled embedding for the same pairs: 0.54, 0.64 (DevB, about 69 images per category).",
+  "where": "Figures 12, 13",
+  "note": "The categories differ in position as their definitions say. Separation is partial. The same readings agree with human-marked lines on CADB (C9)."
+ },
+ {
+  "id": "C7",
+  "status": "partly replicated",
+  "claim": "Position-aware learned probes match or pass the named reading once they have labelled images; the pooled DINOv3 embedding does not.",
+  "evidence": "Pool learning curves (10 to 100 per category): pooled embedding 0.53 to 0.68; edge-strength grid 0.81 and 0.85 on the horizon and vertical pairs; patch-norm map 0.93 on the compact pair. LockboxB (train 138 per category): best baselines LS-Hori3 vs LS-Hori2: G-edge 0.82, L-Ver3 vs L-Ver2: G-edge 0.85, P-RoT vs P-Cent: D-norm 0.93; pooled embedding 0.74, 0.64, 0.57. Four of six pre-stated baseline sub-predictions met; both misses are on the horizon pair (the pooled embedding reached 0.74 against a cap of 0.70; the best baseline was 0.04 above the reading against 0.03 allowed).",
+  "where": "Figure 14",
+  "note": "The named reading's advantage is that it needs no labelled images, not a higher ceiling."
+ },
+ {
+  "id": "C6b",
+  "status": "held back: PICD only",
+  "claim": "A compact-object reading separates P-RoT from P-Cent on PICD.",
+  "evidence": "AUC 0.89 / 0.74 / 0.83 on DevA / DevB / LockboxB, against 0.66 for a pooled DINOv3 probe. But on CADB the same blob location does not follow the annotated subject boxes (C10).",
+  "where": "Figure 13",
+  "note": "Not treated as established: one dataset, and the reading failed its second-dataset check."
+ },
+ {
+  "id": "C10",
+  "status": "not supported on the second dataset",
+  "claim": "The compact-object, thirds-point, centre-point, diagonal, golden, spiral and perspective scores.",
+  "evidence": "CADB test AUC: rule_of_thirds 0.57, center 0.55 (above chance, barely), diagonal 0.53, golden_ratio 0.54, triangle 0.51, curved 0.47, vanishing_point 0.60. The blob location does not track the annotated subject boxes: median distance 0.28 to the centre-class boxes against 0.28 for permuted boxes. The Facet-style thirds heuristic scores 0.59 on rule_of_thirds, above the lens.",
+  "where": "Figure 15",
+  "note": "The line readings carry the cross-dataset result; the compact-object reading carries the PICD P-RoT vs P-Cent result and is not validated outside PICD."
+ },
+ {
+  "id": "C5",
+  "status": "replicated: confirmation and fresh",
+  "claim": "The training-free template scores rank the categories they map to above the rest (AUC above 0.5), modestly.",
+  "evidence": "Predictions met (AUC above 0.5, interval above 0.5): 8 of 11 on DevA (design), 8 of 11 on DevB (confirmation, spec frozen), 8 of 11 on LockboxB (fresh, spec hashed first): LS-Hori2, LS-Hori3, L-Ver2, L-Ver3, LS-Dia, P-Dia, P-RoT, P-Cent. LockboxB AUCs 0.63 to 0.82.",
+  "where": "Figure 9",
+  "note": "Modest AUCs; the claim is direction, not accuracy."
+ },
+ {
+  "id": "C1",
+  "status": "solid (synthetic)",
+  "claim": "On exact synthetic layouts the 13 position templates are located and recovered.",
+  "evidence": "Position error: median 0.17% (horizontal) and 0.13% (vertical) of the frame, 95th percentile about 0.5%. Top-1 recovery within a kind, rank score: 0.97 at default contrast, 0.90 at contrast 0.10, 0.83 at 0.05. Lines and diagonals keep AUC at least 0.99 against nulls down to contrast 0.05.",
+  "where": "Figures 4, 5",
+  "note": "Synthetic only; strokes and tone splits on smooth backgrounds are the easy case."
+ },
+ {
+  "id": "C2",
+  "status": "solid (synthetic)",
+  "claim": "Some templates cannot be told apart by geometry, and the engine reports where.",
+  "evidence": "Thirds and phi lines (4.9% of the frame apart) hand over at 0.355 on a single-line sweep. Fifths against phi (1.8% apart) is confused: fifths recovered 0.78 and 0.83. Rabatment equals the thirds lines on 3:2 and the fifths end lines on 4:5.",
+  "where": "Figures 5, 6",
+  "note": "Identifiability is a property of the templates and the tolerance (1.5% of the frame), not a defect."
+ },
+ {
+  "id": "C3",
+  "status": "solid (synthetic)",
+  "claim": "An extent reading (line vs compact) removes most cross-kind confusion, and compact structures need much more contrast to be seen.",
+  "evidence": "Kind accuracy 0.96 at default contrast, 0.79 at 0.10, 0.65 at 0.05; top-1 among the detected kind 0.94 against 0.86 unarbitrated.",
+  "where": "Figure 7",
+  "note": "The arbitrated rule abstains when it sees nothing."
+ },
+ {
+  "id": "C4",
+  "status": "solid (synthetic, easy case)",
+  "claim": "Golden triangle, golden spiral and perspective readings pass their gates on drawn strokes and line drawings.",
+  "evidence": "Triangle AUC 1.00 against shifted and random nulls; spiral AUC 0.99, eight-way variant accuracy 0.99, tolerance about 2% of the short side; perspective exact count 0.95 (one-point scenes weakest, 0.90).",
+  "where": "Figure 8",
+  "note": "Not validated on any real photograph: PICD has no category for them."
+ },
+ {
+  "id": "C8",
+  "status": "descriptive",
+  "claim": "As a classifier of PICD categories the lens is weaker than a fitted learned probe; its value is that every number has a name.",
+  "evidence": "Fitted DINOv3 probe ahead of the fitted lens-feature probe on 24 of 24 categories on LockboxB; Facet-style heuristic (reimplemented) 0.44 to 0.60.",
+  "where": "Figure 10",
+  "note": "Fitted layers are named as fitted wherever they appear."
+ },
+ {
+  "id": "E1",
+  "status": "exploratory",
+  "claim": "Single lens features other than the pre-stated ones carry signal for several categories (for example line coverage for the horizon categories, AUC 0.81 to 0.85 on DevA and DevB).",
+  "evidence": "Best single feature per category is listed in results/m3_devA.json and m3_devB.json; 62 features per category, no multiplicity correction.",
+  "where": "-",
+  "note": "Not a claim; a place to look."
+ },
+ {
+  "id": "N1",
+  "status": "not claimed",
+  "claim": "That these templates describe how people see composition, or that fit to a template means a photograph is well composed.",
+  "evidence": "Nothing here measures quality or perception.",
+  "where": "",
+  "note": ""
+ },
+ {
+  "id": "N2",
+  "status": "not claimed",
+  "claim": "Anything about the golden triangle, golden spiral, phi, fifths or rabatment templates on real photographs.",
+  "evidence": "Tested on synthetic layouts only; PICD has no labelled category for them.",
+  "where": "",
+  "note": ""
+ },
+ {
+  "id": "N3",
+  "status": "not claimed",
+  "claim": "Anything about the P-Dia vs P-Hori and P-Dia vs P-Ver pairs.",
+  "evidence": "They are arrangements of several points and the lens has no reading for them.",
+  "where": "",
+  "note": ""
+ },
+ {
+  "id": "N4",
+  "status": "not claimed",
+  "claim": "That the pattern holds in other datasets beyond the line readings checked on CADB, in other photographic collections, or at other resolutions.",
+  "evidence": "Two datasets (PICD, CADB), both Flickr-derived or web photographs, 384-pixel readings.",
+  "where": "",
+  "note": ""
+ },
+ {
+  "id": "N6",
+  "status": "not claimed",
+  "claim": "Anything about the ADadras thirds classifier, PhotoFramer, or Facet itself.",
+  "evidence": "Only a reimplementation of Facet's thirds and centre heuristic was compared; the other two were not run.",
+  "where": "",
+  "note": ""
+ },
+ {
+  "id": "N5",
+  "status": "not claimed",
+  "claim": "That the remaining overlap between labelled categories is label noise, or that annotators would agree.",
+  "evidence": "No annotator-agreement data on these pairs.",
+  "where": "",
+  "note": ""
+ }
+]

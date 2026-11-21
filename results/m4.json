@@ -1,0 +1,294 @@
+{
+ "n": 9497,
+ "n_test": 950,
+ "n_train": 8547,
+ "classes": {
+  "center": {
+   "n_test_pos": 451,
+   "n_all_pos": 4804,
+   "fitted_lens_auc": 0.6582166550395692,
+   "fitted_dinov3_auc": 0.8096770036747553,
+   "score": "max centre_h/v/pt",
+   "lens_auc_test": 0.5495692049287044,
+   "lens_ci_test": [
+    0.5127462241556283,
+    0.5869137387857756
+   ],
+   "lens_auc_all": 0.5374015332417956,
+   "lens_ci_all": [
+    0.5254134255440589,
+    0.5494248402717886
+   ],
+   "met_test": true,
+   "facet_auc_test": 0.5122062306431044,
+   "facet_auc_all": 0.5318587057131345
+  },
+  "horizontal": {
+   "n_test_pos": 246,
+   "n_all_pos": 3132,
+   "fitted_lens_auc": 0.8141514227642277,
+   "fitted_dinov3_auc": 0.8757795177383592,
+   "score": "line coverage (h)",
+   "lens_auc_test": 0.7740206947524021,
+   "lens_ci_test": [
+    0.7399042348022912,
+    0.8062690548780488
+   ],
+   "lens_auc_all": 0.7370908113194865,
+   "lens_ci_all": [
+    0.7259293921599905,
+    0.7471872532628248
+   ],
+   "met_test": true
+  },
+  "diagonal": {
+   "n_test_pos": 201,
+   "n_all_pos": 2083,
+   "fitted_lens_auc": 0.6612863585942118,
+   "fitted_dinov3_auc": 0.8103076074899203,
+   "score": "max of two diagonals",
+   "lens_auc_test": 0.5349354695149088,
+   "lens_ci_test": [
+    0.4877730838464553,
+    0.5820893861799148
+   ],
+   "lens_auc_all": 0.521676141503385,
+   "lens_ci_all": [
+    0.5082117061038911,
+    0.5353107252488157
+   ],
+   "met_test": false
+  },
+  "vertical": {
+   "n_test_pos": 182,
+   "n_all_pos": 1896,
+   "fitted_lens_auc": 0.7101433722527473,
+   "fitted_dinov3_auc": 0.8615499084249084,
+   "score": "line coverage (v)",
+   "lens_auc_test": 0.6322508871336996,
+   "lens_ci_test": [
+    0.5863850911458334,
+    0.6745831723614927
+   ],
+   "lens_auc_all": 0.6168519215492965,
+   "lens_ci_all": [
+    0.6031167175496562,
+    0.6312913411279439
+   ],
+   "met_test": true
+  },
+  "rule_of_thirds": {
+   "n_test_pos": 113,
+   "n_all_pos": 1291,
+   "fitted_lens_auc": 0.618517461223713,
+   "fitted_dinov3_auc": 0.7361732271809348,
+   "score": "max thirds_h/v/pts",
+   "lens_auc_test": 0.5653989701948594,
+   "lens_ci_test": [
+    0.5104310062274664,
+    0.6193934299700785
+   ],
+   "lens_auc_all": 0.5352665097594419,
+   "lens_ci_all": [
+    0.5176467389960265,
+    0.5516681496677441
+   ],
+   "met_test": true,
+   "facet_auc_test": 0.5941996806969687,
+   "facet_auc_all": 0.5388988673342303
+  },
+  "triangle": {
+   "n_test_pos": 48,
+   "n_all_pos": 598,
+   "fitted_lens_auc": 0.6380958980044346,
+   "fitted_dinov3_auc": 0.674889135254989,
+   "score": "max golden triangle",
+   "lens_auc_test": 0.5128649297856614,
+   "lens_ci_test": [
+    0.42755970528455284,
+    0.6007748983739838
+   ],
+   "lens_auc_all": 0.5051852806730004,
+   "lens_ci_all": [
+    0.48149251860623926,
+    0.5274967199726699
+   ],
+   "met_test": false
+  },
+  "symmetric": {
+   "n_test_pos": 54,
+   "n_all_pos": 359,
+   "fitted_lens_auc": 0.5971395502645502,
+   "fitted_dinov3_auc": 0.8854786706349206
+  },
+  "golden_ratio": {
+   "n_test_pos": 39,
+   "n_all_pos": 354,
+   "fitted_lens_auc": 0.5804272566072786,
+   "fitted_dinov3_auc": 0.5906161164119452,
+   "score": "max phi_h/v/pts",
+   "lens_auc_test": 0.5446818092262659,
+   "lens_ci_test": [
+    0.442171184103127,
+    0.6441829209941174
+   ],
+   "lens_auc_all": 0.555751644770381,
+   "lens_ci_all": [
+    0.5257513466200254,
+    0.5882211028967855
+   ],
+   "met_test": false
+  },
+  "curved": {
+   "n_test_pos": 57,
+   "n_all_pos": 349,
+   "fitted_lens_auc": 0.5370817862124516,
+   "fitted_dinov3_auc": 0.8284120154810318,
+   "score": "golden spiral",
+   "lens_auc_test": 0.47256438969764836,
+   "lens_ci_test": [
+    0.39728541678945406,
+    0.5460432997387085
+   ],
+   "lens_auc_all": 0.5100491691546715,
+   "lens_ci_all": [
+    0.48121876421232257,
+    0.5404548279925279
+   ],
+   "met_test": false
+  },
+  "fill_the_frame": {
+   "n_test_pos": 66,
+   "n_all_pos": 284,
+   "fitted_lens_auc": 0.7101672836966955,
+   "fitted_dinov3_auc": 0.8479363773481421
+  },
+  "vanishing_point": {
+   "n_test_pos": 27,
+   "n_all_pos": 280,
+   "fitted_lens_auc": 0.7701536856466434,
+   "fitted_dinov3_auc": 0.9788933028369649,
+   "score": "finite VP support",
+   "lens_auc_test": 0.5972473014726536,
+   "lens_ci_test": [
+    0.4907317122105855,
+    0.703791982665222
+   ],
+   "lens_auc_all": 0.5589671259628947,
+   "lens_ci_all": [
+    0.5286666427718967,
+    0.5907043564686371
+   ],
+   "met_test": false
+  },
+  "pattern": {
+   "n_test_pos": 21,
+   "n_all_pos": 106,
+   "fitted_lens_auc": 0.7704649136296069,
+   "fitted_dinov3_auc": 0.9835460556666155
+  },
+  "radial": {
+   "n_test_pos": 6,
+   "n_all_pos": 42,
+   "fitted_lens_auc": 0.7042725988700564,
+   "fitted_dinov3_auc": 0.929731638418079
+  },
+  "none": {
+   "n_test_pos": 2,
+   "n_all_pos": 18
+  }
+ },
+ "T2": {
+  "test": {
+   "horizontal": {
+    "n": 159,
+    "median_error": 0.026258680555555552,
+    "within_0_05": 0.5534591194968553,
+    "spearman": 0.5682744352361441,
+    "p_vs_permuted": 0.0,
+    "null_median_error": 0.22523252890899947
+   },
+   "vertical": {
+    "n": 29,
+    "median_error": 0.08382161458333331,
+    "within_0_05": 0.4482758620689655,
+    "spearman": 0.5463054187192117,
+    "p_vs_permuted": 0.0,
+    "null_median_error": 0.2109375
+   },
+   "center_box": {
+    "n": 451,
+    "median_error": 0.2821582108704418,
+    "within_0_10": 0.11529933481152993,
+    "p_vs_permuted": 0.029,
+    "null_median_error": 0.2845957445802146
+   },
+   "rule_of_thirds_box": {
+    "n": 113,
+    "median_error": 0.28981705799890084,
+    "within_0_10": 0.1504424778761062,
+    "p_vs_permuted": 0.0,
+    "null_median_error": 0.34324824886889443
+   }
+  },
+  "all": {
+   "horizontal": {
+    "n": 2117,
+    "median_error": 0.039713541666666685,
+    "within_0_05": 0.5323571091166746,
+    "spearman": 0.5357676156323598,
+    "p_vs_permuted": 0.0,
+    "null_median_error": 0.22633406432748543
+   },
+   "vertical": {
+    "n": 377,
+    "median_error": 0.06868489583333331,
+    "within_0_05": 0.47214854111405835,
+    "spearman": 0.4468982423829567,
+    "p_vs_permuted": 0.0,
+    "null_median_error": 0.287109375
+   },
+   "center_box": {
+    "n": 4804,
+    "median_error": 0.30074178967265697,
+    "within_0_10": 0.0974188176519567,
+    "p_vs_permuted": 0.028,
+    "null_median_error": 0.30639332113386697
+   },
+   "rule_of_thirds_box": {
+    "n": 1291,
+    "median_error": 0.306627963913353,
+    "within_0_10": 0.12935708752904726,
+    "p_vs_permuted": 0.0,
+    "null_median_error": 0.3624941190529196
+   }
+  }
+ },
+ "predictions": {
+  "P1_met": {
+   "rule_of_thirds": true,
+   "center": true,
+   "horizontal": true,
+   "vertical": true,
+   "diagonal": false
+  },
+  "P1_count": 4,
+  "P1_reading": "supports generalisation",
+  "P2_reported": {
+   "golden_ratio": 0.5446818092262659,
+   "triangle": 0.5128649297856614,
+   "curved": 0.47256438969764836
+  },
+  "P3_vanishing_point_met": false,
+  "T2_a_b_beat_permutation": {
+   "test": {
+    "horizontal": true,
+    "vertical": true
+   },
+   "all": {
+    "horizontal": true,
+    "vertical": true
+   }
+  }
+ }
+}

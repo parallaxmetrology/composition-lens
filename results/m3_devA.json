@@ -1,0 +1,470 @@
+{
+ "split": "devA",
+ "n": 1656,
+ "calibration": {
+  "tau_c": 0.5999999999999999,
+  "tau_b": 0.0175,
+  "calibration_accuracy": 0.785,
+  "n": 1200,
+  "n_optimal_settings": 1
+ },
+ "per_category": {
+  "P-RoT": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7798690446837073,
+   "fitted_dinov3_auc": 0.8911627991927161,
+   "template": "thirds_pts",
+   "lens_auc": 0.6451421422244139,
+   "lens_ci": [
+    0.5735877099257555,
+    0.7204318603143293
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.6041158689716264,
+   "best_single_feature": [
+    0.6748719213172242,
+    "r_thirds_pts"
+   ],
+   "worst_single_feature": [
+    0.2431120608567802,
+    "blob_d_power"
+   ]
+  },
+  "S-RoT": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7531483155712629,
+   "fitted_dinov3_auc": 0.9368145164972649,
+   "template": "thirds_pts",
+   "lens_auc": 0.4657041359597454,
+   "lens_ci": [
+    0.39877811566806387,
+    0.5307381989534533
+   ],
+   "prediction_met": false,
+   "facet_style_auc": 0.5130955316292705,
+   "best_single_feature": [
+    0.699305041870999,
+    "cov_vline"
+   ],
+   "worst_single_feature": [
+    0.40812123868752453,
+    "cov_hline"
+   ]
+  },
+  "P-Cent": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.8680218806790682,
+   "fitted_dinov3_auc": 0.9247691844059067,
+   "template": "centre_pt",
+   "lens_auc": 0.6159009342209802,
+   "lens_ci": [
+    0.529319288056035,
+    0.6938590723541821
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.5917646091887894,
+   "best_single_feature": [
+    0.730984539236368,
+    "blob_peak"
+   ],
+   "worst_single_feature": [
+    0.1287544633480361,
+    "blob_d_centre"
+   ]
+  },
+  "S-Cent": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.8051560231226542,
+   "fitted_dinov3_auc": 0.9422390254148288,
+   "template": "centre_pt",
+   "lens_auc": 0.5425148169456545,
+   "lens_ci": [
+    0.47688259682383133,
+    0.6018307717596778
+   ],
+   "prediction_met": false,
+   "facet_style_auc": 0.6575938558760948,
+   "best_single_feature": [
+    0.6796252157475138,
+    "x_strength"
+   ],
+   "worst_single_feature": [
+    0.3632137932294092,
+    "z_diag_sinister"
+   ]
+  },
+  "P-Dia": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7586915426974603,
+   "fitted_dinov3_auc": 0.9406043670036437,
+   "template": "diag (max of two)",
+   "lens_auc": 0.6467128754463348,
+   "lens_ci": [
+    0.5800457521711734,
+    0.7120590303462004
+   ],
+   "prediction_met": true,
+   "best_single_feature": [
+    0.7388473375158672,
+    "blob_peak"
+   ],
+   "worst_single_feature": [
+    0.34615946595070457,
+    "cov_vline"
+   ]
+  },
+  "LS-Dia": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.8481320146480005,
+   "fitted_dinov3_auc": 0.9158561865884953,
+   "template": "diag (max of two)",
+   "lens_auc": 0.7883619626859538,
+   "lens_ci": [
+    0.7196298274933107,
+    0.8436636439184314
+   ],
+   "prediction_met": true,
+   "best_single_feature": [
+    0.7272997086837804,
+    "kind"
+   ],
+   "worst_single_feature": [
+    0.2809192442216195,
+    "cov_vline"
+   ]
+  },
+  "P-Hori": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7227564541610733,
+   "fitted_dinov3_auc": 0.9000301361606531,
+   "best_single_feature": [
+    0.7045925682401395,
+    "y_strength"
+   ],
+   "worst_single_feature": [
+    0.339269243765011,
+    "img_h"
+   ]
+  },
+  "LS-Hori2": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.9176186953782088,
+   "fitted_dinov3_auc": 0.9482845218852451,
+   "template": "centre_h",
+   "lens_auc": 0.7998867610933034,
+   "lens_ci": [
+    0.7353800809110252,
+    0.8586798991808444
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.43490132690428573,
+   "best_single_feature": [
+    0.8060509757723533,
+    "cov_hline"
+   ],
+   "worst_single_feature": [
+    0.16799539738637298,
+    "d_centre_h"
+   ]
+  },
+  "LS-Hori3": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.9075733084938312,
+   "fitted_dinov3_auc": 0.9634256595709707,
+   "template": "thirds_h",
+   "lens_auc": 0.7418883500908651,
+   "lens_ci": [
+    0.6705448709167786,
+    0.8047816041569638
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.45508798845693726,
+   "best_single_feature": [
+    0.8492050446106499,
+    "cov_hline"
+   ],
+   "worst_single_feature": [
+    0.23538167904075688,
+    "kind"
+   ]
+  },
+  "S-Hori": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.6883920988466069,
+   "fitted_dinov3_auc": 0.9442298384519145,
+   "best_single_feature": [
+    0.6281700044747632,
+    "persp_n_parallel"
+   ],
+   "worst_single_feature": [
+    0.382354821329096,
+    "z_thirds_v"
+   ]
+  },
+  "P-Ver": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7474041807073779,
+   "fitted_dinov3_auc": 0.8866971681141156,
+   "best_single_feature": [
+    0.7039350520077076,
+    "x_strength"
+   ],
+   "worst_single_feature": [
+    0.3136991680593226,
+    "z_thirds_pts"
+   ]
+  },
+  "L-Ver2": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7607919417732848,
+   "fitted_dinov3_auc": 0.8326438545062692,
+   "template": "centre_v",
+   "lens_auc": 0.7727002913162196,
+   "lens_ci": [
+    0.7068023250504553,
+    0.8378320685278029
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.5589024958220322,
+   "best_single_feature": [
+    0.7727002913162196,
+    "z_centre_v"
+   ],
+   "worst_single_feature": [
+    0.2851611371377953,
+    "d_centre_v"
+   ]
+  },
+  "L-Ver3": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7506917618695378,
+   "fitted_dinov3_auc": 0.8354565628338949,
+   "template": "thirds_v",
+   "lens_auc": 0.7258705240952302,
+   "lens_ci": [
+    0.6506652785768426,
+    0.7936157000264833
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.5677743988749167,
+   "best_single_feature": [
+    0.7258705240952302,
+    "z_thirds_v"
+   ],
+   "worst_single_feature": [
+    0.3113019734619143,
+    "d_third_v"
+   ]
+  },
+  "L-VerMul": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7422992977361351,
+   "fitted_dinov3_auc": 0.9039569692154553,
+   "best_single_feature": [
+    0.722856908029917,
+    "persp_n_parallel"
+   ],
+   "worst_single_feature": [
+    0.2727824808452736,
+    "persp_support_finite"
+   ]
+  },
+  "P-Tri": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7161082344775942,
+   "fitted_dinov3_auc": 0.9364400975315744,
+   "best_single_feature": [
+    0.680511036227318,
+    "blob_peak"
+   ],
+   "worst_single_feature": [
+    0.3472233637434591,
+    "blob_d_power"
+   ]
+  },
+  "LS-Tri": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7487100810023469,
+   "fitted_dinov3_auc": 0.9692154552843301,
+   "best_single_feature": [
+    0.6698583600449303,
+    "y_star"
+   ],
+   "worst_single_feature": [
+    0.38896651233299545,
+    "r_phi_h"
+   ]
+  },
+  "LS-C-Cur": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7160077806087505,
+   "fitted_dinov3_auc": 0.9546587764718775,
+   "best_single_feature": [
+    0.6599408235390811,
+    "persp_n_finite"
+   ],
+   "worst_single_feature": [
+    0.4193127128937107,
+    "z_thirds_v"
+   ]
+  },
+  "LS-O-Cur": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.905701213665379,
+   "fitted_dinov3_auc": 0.976037186195812,
+   "best_single_feature": [
+    0.7100855684319151,
+    "facet_center"
+   ],
+   "worst_single_feature": [
+    0.1898486799448417,
+    "r_diag_baroque"
+   ]
+  },
+  "LS-S-Cur": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7180442544953106,
+   "fitted_dinov3_auc": 0.993516159374629,
+   "best_single_feature": [
+    0.6692373724920778,
+    "persp_top1"
+   ],
+   "worst_single_feature": [
+    0.2458106170607198,
+    "x_strength"
+   ]
+  },
+  "LS-Dif": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7549838817201355,
+   "fitted_dinov3_auc": 0.9678821584796764,
+   "best_single_feature": [
+    0.7161767257518059,
+    "persp_n_finite"
+   ],
+   "worst_single_feature": [
+    0.34019159292439477,
+    "y_strength"
+   ]
+  },
+  "S-Per": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.841118508168726,
+   "fitted_dinov3_auc": 0.9897902340575144,
+   "template": "finite VP support",
+   "lens_auc": 0.46155813082746594,
+   "lens_ci": [
+    0.404840050044291,
+    0.5207383587664265
+   ],
+   "prediction_met": false,
+   "best_single_feature": [
+    0.706437266558907,
+    "cov_diag"
+   ],
+   "worst_single_feature": [
+    0.2891518953818617,
+    "z_centre_v"
+   ]
+  },
+  "PL-Den": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.6929947124736309,
+   "fitted_dinov3_auc": 0.9679186871592559,
+   "best_single_feature": [
+    0.6412153091696118,
+    "z_thirds_pts"
+   ],
+   "worst_single_feature": [
+    0.13725651352017754,
+    "y_strength"
+   ]
+  },
+  "PL-Pat": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7884715487246925,
+   "fitted_dinov3_auc": 0.9834616403203565,
+   "best_single_feature": [
+    0.6679360382820562,
+    "blob_d_centre"
+   ],
+   "worst_single_feature": [
+    0.20695323415796826,
+    "blob_peak"
+   ]
+  },
+  "P-Scat": {
+   "n_pos": 69,
+   "fitted_lens_auc": 0.7370026391970996,
+   "fitted_dinov3_auc": 0.9395632996356265,
+   "best_single_feature": [
+    0.6454800325105248,
+    "blob_peak"
+   ],
+   "worst_single_feature": [
+    0.3622823119001306,
+    "persp_n_parallel"
+   ]
+  }
+ },
+ "pairs": {
+  "LS-Hori3 vs LS-Hori2": {
+   "auc": 0.8463558076034446,
+   "ci": [
+    0.7715500945179584,
+    0.9140989287964714
+   ],
+   "n_pos": 69,
+   "n_neg": 69,
+   "detection_rate": 0.9710144927536232,
+   "fitted_dinov3_pair_auc": 0.5616467128754463,
+   "score": "|y*-0.5|",
+   "median_score_pos": 0.1837837837837838,
+   "median_score_neg": 0.037109375,
+   "reading": "positions differ as defined (AUC>=0.65, CI>0.5)"
+  },
+  "L-Ver3 vs L-Ver2": {
+   "auc": 0.7659105229993699,
+   "ci": [
+    0.6782188615837009,
+    0.844473324931737
+   ],
+   "n_pos": 69,
+   "n_neg": 69,
+   "detection_rate": 0.9565217391304348,
+   "fitted_dinov3_pair_auc": 0.5912623398445704,
+   "score": "|x*-0.5|",
+   "median_score_pos": 0.17057291666666663,
+   "median_score_neg": 0.06119791666666663,
+   "reading": "positions differ as defined (AUC>=0.65, CI>0.5)"
+  },
+  "P-RoT vs P-Cent": {
+   "auc": 0.8850031505986138,
+   "ci": [
+    0.8204106280193236,
+    0.9431973324931737
+   ],
+   "n_pos": 69,
+   "n_neg": 69,
+   "detection_rate": 0.2536231884057971,
+   "fitted_dinov3_pair_auc": 0.649653434152489,
+   "score": "blob distance to centre",
+   "median_score_pos": 0.2408318915758458,
+   "median_score_neg": 0.08944271909999167,
+   "reading": "positions differ as defined (AUC>=0.65, CI>0.5)"
+  }
+ },
+ "kind_share": {
+  "none": 0.025362318840579712,
+  "hline": 0.411231884057971,
+  "vline": 0.37983091787439616,
+  "diag": 0.16727053140096618,
+  "point": 0.016304347826086956
+ },
+ "y_star_median_by_cat": {
+  "LS-Hori2": 0.5177165354330708,
+  "LS-Hori3": 0.6643518518518519,
+  "P-RoT": 0.607421875,
+  "P-Cent": 0.501953125
+ }
+}

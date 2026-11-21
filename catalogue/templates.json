@@ -1,0 +1,471 @@
+[
+ {
+  "id": "thirds_h",
+  "name": "Rule of thirds, horizontal lines",
+  "family": "thirds",
+  "kind": "hline",
+  "primitives": [
+   0.3333333333333333,
+   0.6666666666666666
+  ],
+  "overlay_names": [
+   "Rule of Thirds"
+  ],
+  "picd": [
+   "LS-Hori3"
+  ],
+  "cadb": [
+   "rule of thirds",
+   "horizontal"
+  ],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "thirds_v",
+  "name": "Rule of thirds, vertical lines",
+  "family": "thirds",
+  "kind": "vline",
+  "primitives": [
+   0.3333333333333333,
+   0.6666666666666666
+  ],
+  "overlay_names": [
+   "Rule of Thirds"
+  ],
+  "picd": [
+   "L-Ver3"
+  ],
+  "cadb": [
+   "rule of thirds",
+   "vertical"
+  ],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "thirds_pts",
+  "name": "Rule of thirds, power points",
+  "family": "thirds",
+  "kind": "points",
+  "primitives": [
+   [
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   [
+    0.3333333333333333,
+    0.6666666666666666
+   ],
+   [
+    0.6666666666666666,
+    0.3333333333333333
+   ],
+   [
+    0.6666666666666666,
+    0.6666666666666666
+   ]
+  ],
+  "overlay_names": [
+   "Rule of Thirds"
+  ],
+  "picd": [
+   "P-RoT",
+   "S-RoT"
+  ],
+  "cadb": [
+   "rule of thirds"
+  ],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "centre_h",
+  "name": "Centre, horizontal midline",
+  "family": "centre",
+  "kind": "hline",
+  "primitives": [
+   0.5
+  ],
+  "overlay_names": [
+   "Centre Cross",
+   "Quadrant"
+  ],
+  "picd": [
+   "LS-Hori2"
+  ],
+  "cadb": [
+   "center",
+   "horizontal"
+  ],
+  "status": "v0",
+  "note": "Centre Cross and Quadrant have the same geometry (the two midlines); the page lists them separately."
+ },
+ {
+  "id": "centre_v",
+  "name": "Centre, vertical midline",
+  "family": "centre",
+  "kind": "vline",
+  "primitives": [
+   0.5
+  ],
+  "overlay_names": [
+   "Centre Cross",
+   "Quadrant"
+  ],
+  "picd": [
+   "L-Ver2"
+  ],
+  "cadb": [
+   "center",
+   "vertical",
+   "symmetric"
+  ],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "centre_pt",
+  "name": "Centre point",
+  "family": "centre",
+  "kind": "points",
+  "primitives": [
+   [
+    0.5,
+    0.5
+   ]
+  ],
+  "overlay_names": [
+   "Centre Cross",
+   "Quadrant"
+  ],
+  "picd": [
+   "P-Cent",
+   "S-Cent"
+  ],
+  "cadb": [
+   "center"
+  ],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "phi_h",
+  "name": "Golden-ratio grid, horizontal lines",
+  "family": "phi",
+  "kind": "hline",
+  "primitives": [
+   0.3819660112501051,
+   0.6180339887498949
+  ],
+  "overlay_names": [
+   "Golden Ratio",
+   "Phi (Golden)"
+  ],
+  "picd": [],
+  "cadb": [
+   "golden ratio"
+  ],
+  "status": "v0",
+  "note": "No PICD category is defined by phi positions; 0.382 lies 4.9% of the frame from 1/3."
+ },
+ {
+  "id": "phi_v",
+  "name": "Golden-ratio grid, vertical lines",
+  "family": "phi",
+  "kind": "vline",
+  "primitives": [
+   0.3819660112501051,
+   0.6180339887498949
+  ],
+  "overlay_names": [
+   "Golden Ratio",
+   "Phi (Golden)"
+  ],
+  "picd": [],
+  "cadb": [
+   "golden ratio"
+  ],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "phi_pts",
+  "name": "Golden-ratio grid, power points",
+  "family": "phi",
+  "kind": "points",
+  "primitives": [
+   [
+    0.3819660112501051,
+    0.3819660112501051
+   ],
+   [
+    0.3819660112501051,
+    0.6180339887498949
+   ],
+   [
+    0.6180339887498949,
+    0.3819660112501051
+   ],
+   [
+    0.6180339887498949,
+    0.6180339887498949
+   ]
+  ],
+  "overlay_names": [
+   "Golden Ratio"
+  ],
+  "picd": [],
+  "cadb": [
+   "golden ratio"
+  ],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "fifths_h",
+  "name": "Rule of fifths, horizontal lines",
+  "family": "fifths",
+  "kind": "hline",
+  "primitives": [
+   0.2,
+   0.4,
+   0.6,
+   0.8
+  ],
+  "overlay_names": [
+   "Rule of Fifths"
+  ],
+  "picd": [],
+  "cadb": [],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "fifths_v",
+  "name": "Rule of fifths, vertical lines",
+  "family": "fifths",
+  "kind": "vline",
+  "primitives": [
+   0.2,
+   0.4,
+   0.6,
+   0.8
+  ],
+  "overlay_names": [
+   "Rule of Fifths"
+  ],
+  "picd": [],
+  "cadb": [],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "diag_baroque",
+  "name": "Baroque diagonal (bottom-left to top-right)",
+  "family": "diagonal",
+  "kind": "diag",
+  "primitives": [
+   "BL-TR"
+  ],
+  "overlay_names": [
+   "Diagonal Method",
+   "Baroque Diagonal"
+  ],
+  "picd": [
+   "LS-Dia",
+   "P-Dia"
+  ],
+  "cadb": [
+   "diagonal"
+  ],
+  "status": "v0",
+  "note": "Corner-to-corner line in pixel geometry (angle depends on the aspect ratio)."
+ },
+ {
+  "id": "diag_sinister",
+  "name": "Sinister diagonal (top-left to bottom-right)",
+  "family": "diagonal",
+  "kind": "diag",
+  "primitives": [
+   "TL-BR"
+  ],
+  "overlay_names": [
+   "Diagonal Method",
+   "Sinister Diagonal"
+  ],
+  "picd": [
+   "LS-Dia",
+   "P-Dia"
+  ],
+  "cadb": [
+   "diagonal"
+  ],
+  "status": "v0",
+  "note": ""
+ },
+ {
+  "id": "golden_triangle",
+  "name": "Golden triangle",
+  "family": "diagonal",
+  "kind": "composite",
+  "primitives": [],
+  "overlay_names": [
+   "Golden Triangle",
+   "Reciprocal Lines"
+  ],
+  "picd": [],
+  "cadb": [
+   "triangle"
+  ],
+  "status": "M2b",
+  "note": "Diagonal plus two perpendiculars from the other corners. Reciprocal lines appear to share this geometry; confirm against a primary source."
+ },
+ {
+  "id": "rabatment",
+  "name": "Rabatment",
+  "family": "frame",
+  "kind": "vline",
+  "primitives": [],
+  "overlay_names": [
+   "Rabatment"
+  ],
+  "picd": [],
+  "cadb": [],
+  "status": "M2b",
+  "note": "Lines at the edges of the squares on the short side; depends on the aspect ratio."
+ },
+ {
+  "id": "golden_spiral",
+  "name": "Golden spiral",
+  "family": "curve",
+  "kind": "path",
+  "primitives": [],
+  "overlay_names": [
+   "Golden Spiral"
+  ],
+  "picd": [],
+  "cadb": [
+   "curved"
+  ],
+  "status": "M2b",
+  "note": "Eight orientations (four rotations, two mirrors); needs a curve evidence map."
+ },
+ {
+  "id": "persp_1pt",
+  "name": "One-point perspective",
+  "family": "perspective",
+  "kind": "vp",
+  "primitives": [],
+  "overlay_names": [
+   "1-Point"
+  ],
+  "picd": [
+   "S-Per"
+  ],
+  "cadb": [
+   "vanishing point"
+  ],
+  "status": "M2b",
+  "note": "Needs vanishing-point evidence (LSD + RANSAC; the benchmark's B1 block is a starting point)."
+ },
+ {
+  "id": "persp_2pt",
+  "name": "Two-point perspective",
+  "family": "perspective",
+  "kind": "vp",
+  "primitives": [],
+  "overlay_names": [
+   "2-Point"
+  ],
+  "picd": [
+   "S-Per"
+  ],
+  "cadb": [
+   "vanishing point"
+  ],
+  "status": "M2b",
+  "note": ""
+ },
+ {
+  "id": "persp_3pt",
+  "name": "Three-point perspective",
+  "family": "perspective",
+  "kind": "vp",
+  "primitives": [],
+  "overlay_names": [
+   "3-Point"
+  ],
+  "picd": [
+   "S-Per"
+  ],
+  "cadb": [
+   "vanishing point"
+  ],
+  "status": "M2b",
+  "note": ""
+ },
+ {
+  "id": "armature14",
+  "name": "Armature, 14-line",
+  "family": "armature",
+  "kind": "composite",
+  "primitives": [],
+  "overlay_names": [
+   "Armature, 14-line"
+  ],
+  "picd": [],
+  "cadb": [],
+  "status": "deferred",
+  "note": "Geometry not pinned down in the sources read; needs a primary source before it is implemented."
+ },
+ {
+  "id": "rootrect",
+  "name": "Root rectangles and phi rectangle (frame proportion)",
+  "family": "frame",
+  "kind": "frame",
+  "primitives": [],
+  "overlay_names": [
+   "Root 2",
+   "Root 3",
+   "Root 4",
+   "Root 5",
+   "Phi (Golden)",
+   "1.5 Rectangle"
+  ],
+  "picd": [],
+  "cadb": [],
+  "status": "frame-only",
+  "note": "A property of the frame's aspect ratio, not of image content; reported as a descriptor."
+ },
+ {
+  "id": "radial",
+  "name": "Radial / circular",
+  "family": "curve",
+  "kind": "path",
+  "primitives": [],
+  "overlay_names": [
+   "Radial / Circular"
+  ],
+  "picd": [],
+  "cadb": [
+   "radial"
+  ],
+  "status": "deferred",
+  "note": ""
+ },
+ {
+  "id": "symmetry",
+  "name": "Mirror symmetry",
+  "family": "symmetry",
+  "kind": "mirror",
+  "primitives": [],
+  "overlay_names": [],
+  "picd": [],
+  "cadb": [
+   "symmetric"
+  ],
+  "status": "deferred",
+  "note": "Not in the overlay catalogue; present in CADB and likely derivable from ISR symmetry readings."
+ }
+]

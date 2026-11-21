@@ -1,0 +1,401 @@
+{
+ "n": 960,
+ "per_category": {
+  "P-RoT": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.8041847826086956,
+   "fitted_dinov3_auc": 0.8722826086956522,
+   "template": "thirds_pts",
+   "lens_auc": 0.6410054347826087,
+   "lens_ci": [
+    0.5449177989130435,
+    0.7238777173913042
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.5923641304347826
+  },
+  "S-RoT": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7857880434782609,
+   "fitted_dinov3_auc": 0.9386684782608695,
+   "template": "thirds_pts",
+   "lens_auc": 0.5013858695652174,
+   "lens_ci": [
+    0.4140774456521739,
+    0.586289402173913
+   ],
+   "prediction_met": false,
+   "facet_style_auc": 0.501820652173913
+  },
+  "P-Cent": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.8163315217391305,
+   "fitted_dinov3_auc": 0.9279347826086957,
+   "template": "centre_pt",
+   "lens_auc": 0.6354076086956522,
+   "lens_ci": [
+    0.5360169836956522,
+    0.7357927989130435
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.5542798913043478
+  },
+  "S-Cent": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7597826086956522,
+   "fitted_dinov3_auc": 0.9314130434782608,
+   "template": "centre_pt",
+   "lens_auc": 0.47347826086956524,
+   "lens_ci": [
+    0.39485869565217396,
+    0.5586447010869565
+   ],
+   "prediction_met": false,
+   "facet_style_auc": 0.5987364130434782
+  },
+  "P-Dia": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7145923913043478,
+   "fitted_dinov3_auc": 0.8875271739130435,
+   "template": "diag (max of two)",
+   "lens_auc": 0.6304347826086957,
+   "lens_ci": [
+    0.5359510869565217,
+    0.7280815217391304
+   ],
+   "prediction_met": true
+  },
+  "LS-Dia": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7543478260869565,
+   "fitted_dinov3_auc": 0.9361956521739131,
+   "template": "diag (max of two)",
+   "lens_auc": 0.8024456521739131,
+   "lens_ci": [
+    0.7242459239130435,
+    0.867500679347826
+   ],
+   "prediction_met": true
+  },
+  "P-Hori": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.764266304347826,
+   "fitted_dinov3_auc": 0.953858695652174
+  },
+  "LS-Hori2": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.8958423913043478,
+   "fitted_dinov3_auc": 0.9588858695652174,
+   "template": "centre_h",
+   "lens_auc": 0.8240760869565218,
+   "lens_ci": [
+    0.7659932065217392,
+    0.8793709239130434
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.4987228260869565
+  },
+  "LS-Hori3": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.9048097826086956,
+   "fitted_dinov3_auc": 0.9798369565217391,
+   "template": "thirds_h",
+   "lens_auc": 0.7995380434782609,
+   "lens_ci": [
+    0.7237398097826088,
+    0.8680285326086956
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.46119565217391306
+  },
+  "S-Hori": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7588858695652174,
+   "fitted_dinov3_auc": 0.9613858695652174
+  },
+  "P-Ver": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7145380434782609,
+   "fitted_dinov3_auc": 0.8959782608695652
+  },
+  "L-Ver2": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.8608423913043478,
+   "fitted_dinov3_auc": 0.8649456521739131,
+   "template": "centre_v",
+   "lens_auc": 0.7534782608695653,
+   "lens_ci": [
+    0.656711277173913,
+    0.8429021739130435
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.43730978260869563
+  },
+  "L-Ver3": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7539402173913043,
+   "fitted_dinov3_auc": 0.8329891304347826,
+   "template": "thirds_v",
+   "lens_auc": 0.7427173913043478,
+   "lens_ci": [
+    0.6519524456521739,
+    0.8222357336956522
+   ],
+   "prediction_met": true,
+   "facet_style_auc": 0.5116847826086957
+  },
+  "L-VerMul": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.825625,
+   "fitted_dinov3_auc": 0.9360597826086956
+  },
+  "P-Tri": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7522826086956522,
+   "fitted_dinov3_auc": 0.9049456521739131
+  },
+  "LS-Tri": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.868641304347826,
+   "fitted_dinov3_auc": 0.9630978260869565
+  },
+  "LS-C-Cur": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7194565217391304,
+   "fitted_dinov3_auc": 0.9208695652173913
+  },
+  "LS-O-Cur": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.8925,
+   "fitted_dinov3_auc": 0.9805434782608695
+  },
+  "LS-S-Cur": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.7420380434782609,
+   "fitted_dinov3_auc": 0.9848097826086957
+  },
+  "LS-Dif": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.8119021739130434,
+   "fitted_dinov3_auc": 0.9547554347826087
+  },
+  "S-Per": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.8875815217391304,
+   "fitted_dinov3_auc": 0.9917663043478261,
+   "template": "finite VP support",
+   "lens_auc": 0.39894021739130436,
+   "lens_ci": [
+    0.32711956521739133,
+    0.47021093750000004
+   ],
+   "prediction_met": false
+  },
+  "PL-Den": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.8514130434782609,
+   "fitted_dinov3_auc": 0.9943206521739131
+  },
+  "PL-Pat": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.865733695652174,
+   "fitted_dinov3_auc": 0.9917663043478261
+  },
+  "P-Scat": {
+   "n_pos": 40,
+   "fitted_lens_auc": 0.726195652173913,
+   "fitted_dinov3_auc": 0.9326358695652174
+  }
+ },
+ "pairs": {
+  "LS-Hori3 vs LS-Hori2": {
+   "auc": 0.775625,
+   "ci": [
+    0.665,
+    0.8762656249999999
+   ],
+   "n_pos": 40,
+   "n_neg": 40,
+   "detection_rate": 0.975,
+   "score": "|y*-0.5|",
+   "median_pos": 0.18001302083333331,
+   "median_neg": 0.04505882352941176,
+   "reading_rule_met": true
+  },
+  "L-Ver3 vs L-Ver2": {
+   "auc": 0.7940625,
+   "ci": [
+    0.6821015625,
+    0.900640625
+   ],
+   "n_pos": 40,
+   "n_neg": 40,
+   "detection_rate": 0.95,
+   "score": "|x*-0.5|",
+   "median_pos": 0.17415364583333334,
+   "median_neg": 0.0591359380546681,
+   "reading_rule_met": true
+  },
+  "P-RoT vs P-Cent": {
+   "auc": 0.8284375,
+   "ci": [
+    0.7275,
+    0.9281328125
+   ],
+   "n_pos": 40,
+   "n_neg": 40,
+   "detection_rate": 0.2875,
+   "score": "blob distance to centre",
+   "median_pos": 0.25612496949731384,
+   "median_neg": 0.11999999999999977,
+   "reading_rule_met": true
+  }
+ },
+ "baselines": {
+  "LS-Hori3 vs LS-Hori2": {
+   "D-pool": {
+    "auc": 0.74,
+    "ci": [
+     0.6299375,
+     0.84690625
+    ]
+   },
+   "D-grid": {
+    "auc": 0.668125,
+    "ci": [
+     0.54115625,
+     0.779375
+    ]
+   },
+   "D-norm": {
+    "auc": 0.653125,
+    "ci": [
+     0.521875,
+     0.766265625
+    ]
+   },
+   "G-bright": {
+    "auc": 0.8025,
+    "ci": [
+     0.695,
+     0.8925
+    ]
+   },
+   "G-edge": {
+    "auc": 0.818125,
+    "ci": [
+     0.698734375,
+     0.9125156249999999
+    ]
+   }
+  },
+  "L-Ver3 vs L-Ver2": {
+   "D-pool": {
+    "auc": 0.641875,
+    "ci": [
+     0.51740625,
+     0.760015625
+    ]
+   },
+   "D-grid": {
+    "auc": 0.636875,
+    "ci": [
+     0.518125,
+     0.7556875
+    ]
+   },
+   "D-norm": {
+    "auc": 0.84375,
+    "ci": [
+     0.7424375000000001,
+     0.915640625
+    ]
+   },
+   "G-bright": {
+    "auc": 0.675625,
+    "ci": [
+     0.55246875,
+     0.794375
+    ]
+   },
+   "G-edge": {
+    "auc": 0.8475,
+    "ci": [
+     0.753125,
+     0.925640625
+    ]
+   }
+  },
+  "P-RoT vs P-Cent": {
+   "D-pool": {
+    "auc": 0.57125,
+    "ci": [
+     0.443125,
+     0.698765625
+    ]
+   },
+   "D-grid": {
+    "auc": 0.6775,
+    "ci": [
+     0.558734375,
+     0.79503125
+    ]
+   },
+   "D-norm": {
+    "auc": 0.928125,
+    "ci": [
+     0.869375,
+     0.975
+    ]
+   },
+   "G-bright": {
+    "auc": 0.5925,
+    "ci": [
+     0.470609375,
+     0.7188437499999999
+    ]
+   },
+   "G-edge": {
+    "auc": 0.8125,
+    "ci": [
+     0.7125,
+     0.9031406249999999
+    ]
+   }
+  }
+ },
+ "predictions": {
+  "PA_eight_met": {
+   "P-RoT": true,
+   "P-Cent": true,
+   "P-Dia": true,
+   "LS-Dia": true,
+   "LS-Hori2": true,
+   "LS-Hori3": true,
+   "L-Ver2": true,
+   "L-Ver3": true
+  },
+  "PA_three_unmet_expected": {
+   "S-RoT": false,
+   "S-Cent": false,
+   "S-Per": false
+  },
+  "PB_all_three_pairs_read_positions_differ": {
+   "LS-Hori3 vs LS-Hori2": true,
+   "L-Ver3 vs L-Ver2": true,
+   "P-RoT vs P-Cent": true
+  },
+  "PC": {
+   "pooled_embedding_at_most_0.70_all_pairs": {
+    "LS-Hori3 vs LS-Hori2": false,
+    "L-Ver3 vs L-Ver2": true,
+    "P-RoT vs P-Cent": true
+   },
+   "Ver_and_RoT_best_of_Dnorm_Gedge_matches_or_passes_reading": {
+    "L-Ver3 vs L-Ver2": true,
+    "P-RoT vs P-Cent": true
+   },
+   "Hori_best_baseline_no_more_than_0.03_above_reading": false
+  }
+ }
+}

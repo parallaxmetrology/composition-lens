@@ -1,0 +1,7 @@
+{
+ "tau_c": 0.5999999999999999,
+ "tau_b": 0.0175,
+ "calibration_accuracy": 0.785,
+ "n": 1200,
+ "n_optimal_settings": 1
+}
